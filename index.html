@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CopyBox</title>
+<meta name="description" content="CopyBox: draw a box over any text on your Android screen and copy it, even where apps block copying.">
+<link rel="icon" href="icon.png">
+<style>
+  :root { color-scheme: light dark; --fg: #111; --muted: #555; --bg: #fff; --line: #ddd; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #eee; --muted: #aaa; --bg: #000; --line: #333; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
+  header { display: flex; align-items: center; gap: 16px; }
+  header img { width: 72px; height: 72px; border-radius: 18px; }
+  h1 { font-size: 32px; margin: 0; }
+  .muted { color: var(--muted); margin: 0; }
+  h2 { font-size: 20px; margin: 32px 0 8px; }
+  li { margin: 4px 0; }
+  a { color: inherit; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="">
+    <div>
+      <h1>CopyBox</h1>
+      <p class="muted">Copy text from any app on Android.</p>
+    </div>
+  </header>
+
+  <h2>How it works</h2>
+  <ol>
+    <li>Tap the floating CopyBox button.</li>
+    <li>Drag the box over the text you want and resize it to fit.</li>
+    <li>Tap Copy. The text is on your clipboard, ready to paste.</li>
+  </ol>
+
+  <h2>Private by design</h2>
+  <ul>
+    <li>Text is recognised on your phone. CopyBox has no internet permission.</li>
+    <li>The screen is captured only when you tap Copy or Edit, and only inside your box.</li>
+    <li>No accounts, no ads, no tracking.</li>
+  </ul>
+
+  <footer>
+    <a href="privacy-policy.html">Privacy policy</a>
+  </footer>
+</main>
+</body>
+</html>
